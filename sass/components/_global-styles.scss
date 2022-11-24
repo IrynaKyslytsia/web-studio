@@ -1,0 +1,29 @@
+body{
+    background-color: var(--white);
+    color: $primary-text-color; 
+    font-family: $primary-font;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+ul{
+    list-style:none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
