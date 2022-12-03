@@ -40,28 +40,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 450px;
+    height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
     
     background-color: $bg-color;
 
-    @media screen and (min-width: $mobile) {
-        width: 450px;
-        height: 120px;
-    }
-
     @media screen and (min-width: $tablet) {
-        width: 354px;
-        height: 120px;
+        max-width: 354px;
     }
 
     @media screen and (min-width: $desktop) {
-        width: 270px;
-        height: 120px;
+        max-width: 270px;
     }
 }
 
-.features__title{
+.features__title {
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -75,7 +70,7 @@
     }
 }
 
-.features__text{
+.features__text {
     line-height: 1.71;
 }
 
