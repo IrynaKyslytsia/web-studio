@@ -3,22 +3,80 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 1600px;
-    height: 400px;
     margin-left: auto;
     margin-right: auto;
-}
+    background-color: $hero-bg-color;
 
-background-color: $hero-bg-color; 
-background-image: linear-gradient(
+    max-width: 480px;
+    height: 400px;
+ 
+background-image: 
+    linear-gradient(
     to right,
     rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero.jpg");
+    rgba(47, 48, 58, 0.4)),
+    url("../../images/Hero/img_480.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: 
+        linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url('../../images/Hero/img_960.jpg');
+    }
+
 background-repeat: no-repeat;
 background-position: center;
-background-size: cover;        
+background-size: cover;
+
+@media screen and (min-width: $tablet) {
+    max-width: 768px;
+    height: 400px;
+ 
+background-image: 
+    linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("../../images/Hero/img_768.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: 
+        linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url('../../images/Hero/img_1536.jpg');
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 400px;
+ 
+background-image: 
+    linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("../../images/Hero/img_1600.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: 
+        linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url('../../images/Hero/img_3200.jpg');
+    }
+}
 }
 
 .hero__title {
@@ -27,8 +85,13 @@ margin-bottom: 30px;
     
 color: $white-color;
 font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
+font-size: 26px;
+line-height: 1.62;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+
+@media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+}
 }

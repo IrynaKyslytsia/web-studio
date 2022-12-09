@@ -1,0 +1,31 @@
+.page-footer {
+    background-color: $footer-bg-color;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+}
+
+.container__footer {
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
+.page-footer__wrap {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-top: 0;
+
+    }
+}
+
+.logo--white {
+    color: $white-color;
+}
