@@ -1,4 +1,4 @@
-.section--no-padding{
+.section--no-padding {
     padding-top: 0;
 
     @media screen and (max-width: 1199px) {
@@ -6,17 +6,17 @@
     }
   }
 
-  .work{
+  .work {
     display: flex;
     justify-content: space-between;
   }
 
-  .work__item{
+  .work__item {
     position: relative;
     width: 370px;
   }
 
-  .work__description{
+  .work__description {
     position: absolute;
     left: 0;
     bottom: 0;

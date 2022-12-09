@@ -31,8 +31,13 @@
     color: $primary-text-color;
     font-weight: 500;
     letter-spacing: 0.02em;
-    
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 
     @media screen and (max-width: 767px) {
         font-size: 34px;
@@ -65,7 +70,7 @@
     }
  }
 
-.contacts__icon{
+.contacts__icon {
     display: none;
 
     @media screen and (min-width: $tablet) {
